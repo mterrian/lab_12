@@ -1,0 +1,147 @@
+
+body {
+	background-image:url("fries.jpg");
+	background-size: 100%;
+}
+
+.style {
+	border: 1px solid black;
+	border-radius: 2px;
+	width: 500px;
+	min-height: 350px;
+	display: block;
+	position: relative;
+	font-family: arial;
+	background-color: #f5f5f5;
+	background-image:url("pie.png");
+	background-position:right top;
+	background-size:  200px 140px;
+	background-repeat: no-repeat;
+}
+
+.lib {
+	display: inline-block;
+	border-bottom: 1px solid black;
+}
+li {
+	list-style: none;
+	position: relative;
+	text-indent: 10px;
+	margin-bottom: 10px;
+	width: 69%;
+}
+ul {
+	padding-left: none;
+	margin-left: -38px;
+	min-height: 120px;
+}
+
+li:before{
+	content:"-";
+	margin-left: -2px;
+}
+
+li:nth-child(even){
+	background-color: rgba(200,200,200,.8);
+}
+
+button[type=reset]{
+	position: absolute;
+	left: 370px;
+	border: none;
+	background-color: rgba(10,190,10,0.9);
+}
+
+
+
+input[type=text]{
+	position: relative;
+	top: 40px;
+	width: 67%;
+	margin-right: 15px;
+	margin-left: 4px;
+}
+
+button[type=submit] {
+	border: none;
+	position: relative;
+	top: 40px;
+	margin-bottom: 10px;
+	margin-left: 4px;
+	color: white;
+	background-color: rgba(10,10,190,1);
+}
+
+#filter{
+	display: block;
+	margin-bottom: 90px;
+}
+
+
+@media only screen and (max-width: 490px) {
+	.style {
+		min-height: 500px;
+		min-width: 380px;
+		width: 90%;
+		font-size: 20px;
+		margin: 0 auto
+	}
+	input[type=text]{
+	position: relative;
+	font-size: 16px;
+	top: 40px;
+	width: 57%;
+	margin-right: 15px;
+	margin-left: 4px;
+	}
+
+	button[type=reset]{
+	position: absolute;
+	font-size: 16px;
+	left: 250px;
+	border: none;
+	background-color: rgba(10,190,10,0.9);
+	}	
+
+	button[type=submit] {
+	border: none;
+	font-size: 16px;
+	position: relative;
+	top: 40px;
+	margin-bottom: 10px;
+	margin-left: 4px;
+	color: white;
+	background-color: rgba(10,10,190,1);
+	}
+}
+
+@media only screen and (min-width: 790px){
+	body {
+	background-image:url("fries.jpg");
+	background-size: 100%;
+}
+
+	.style {
+	border: 1px solid black;
+	border-radius: 2px;
+	width: 600px;
+	min-height: 350px;
+	display: block;
+	position: relative;
+	margin: 0 auto;
+	font-family: arial;
+	background-color: #f5f5f5;
+	background-image:url("pie.png");
+	background-position:right top;
+	background-size:  200px 140px;
+	background-repeat: no-repeat;
+}
+
+button[type=reset]{
+	position: absolute;
+	left: 440px;
+	border: none;
+	background-color: rgba(10,190,10,0.9);
+}
+
+}
